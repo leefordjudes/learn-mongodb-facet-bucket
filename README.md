@@ -1,77 +1,46 @@
-![add fields in aggregate](src/assets/1.png)
+## Add fields in aggregate
 
-<p align="center">
-  <a href="http://nestjs.com/" target="blank"><img src="https://nestjs.com/img/logo_text.svg" width="320" alt="Nest Logo" /></a>
-</p>
+- localhost:3000/learn-aggregate?stage=1
+  ![add fields in aggregate](src/assets/1.png)
 
-[travis-image]: https://api.travis-ci.org/nestjs/nest.svg?branch=master
-[travis-url]: https://travis-ci.org/nestjs/nest
-[linux-image]: https://img.shields.io/travis/nestjs/nest/master.svg?label=linux
-[linux-url]: https://travis-ci.org/nestjs/nest
+## Added fields of Month, Year, MonthYear and aggregated result of grand totals for the entire series
 
-  <p align="center">A progressive <a href="http://nodejs.org" target="blank">Node.js</a> framework for building efficient and scalable server-side applications, heavily inspired by <a href="https://angular.io" target="blank">Angular</a>.</p>
-    <p align="center">
-<a href="https://www.npmjs.com/~nestjscore"><img src="https://img.shields.io/npm/v/@nestjs/core.svg" alt="NPM Version" /></a>
-<a href="https://www.npmjs.com/~nestjscore"><img src="https://img.shields.io/npm/l/@nestjs/core.svg" alt="Package License" /></a>
-<a href="https://www.npmjs.com/~nestjscore"><img src="https://img.shields.io/npm/dm/@nestjs/core.svg" alt="NPM Downloads" /></a>
-<a href="https://travis-ci.org/nestjs/nest"><img src="https://api.travis-ci.org/nestjs/nest.svg?branch=master" alt="Travis" /></a>
-<a href="https://travis-ci.org/nestjs/nest"><img src="https://img.shields.io/travis/nestjs/nest/master.svg?label=linux" alt="Linux" /></a>
-<a href="https://coveralls.io/github/nestjs/nest?branch=master"><img src="https://coveralls.io/repos/github/nestjs/nest/badge.svg?branch=master#5" alt="Coverage" /></a>
-<a href="https://gitter.im/nestjs/nestjs?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=body_badge"><img src="https://badges.gitter.im/nestjs/nestjs.svg" alt="Gitter" /></a>
-<a href="https://opencollective.com/nest#backer"><img src="https://opencollective.com/nest/backers/badge.svg" alt="Backers on Open Collective" /></a>
-<a href="https://opencollective.com/nest#sponsor"><img src="https://opencollective.com/nest/sponsors/badge.svg" alt="Sponsors on Open Collective" /></a>
-  <a href="https://paypal.me/kamilmysliwiec"><img src="https://img.shields.io/badge/Donate-PayPal-dc3d53.svg"/></a>
-  <a href="https://twitter.com/nestframework"><img src="https://img.shields.io/twitter/follow/nestframework.svg?style=social&label=Follow"></a>
-</p>
-  <!--[![Backers on Open Collective](https://opencollective.com/nest/backers/badge.svg)](https://opencollective.com/nest#backer)
-  [![Sponsors on Open Collective](https://opencollective.com/nest/sponsors/badge.svg)](https://opencollective.com/nest#sponsor)-->
+- localhost:3000/learn-aggregate?stage=2
+  ![add grand totals](src/assets/2.png)
 
-## Description
+## Added fields of Month, Year, MonthYear and aggregated result of column totals of each month
 
-[Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
+- localhost:3000/learn-aggregate?stage=3
+  ![add column totals of each month](src/assets/3.png)
 
-## Installation
+## Added fields of Month, Year, MonthYear and aggregated result of column totals of each year
 
-```bash
-$ npm install
-```
+- localhost:3000/learn-aggregate?stage=4
+  ![add column totals of each year](src/assets/4.png)
 
-## Running the app
+## Added fields of Month, Year, MonthYear and aggregated result of column totals of each month and year
 
-```bash
-# development
-$ npm run start
+- localhost:3000/learn-aggregate?stage=5
+  ![add column totals of each month and year](src/assets/5.png)
 
-# watch mode
-$ npm run start:dev
+## Added fields of Month, Year, MonthYear, and aggregated result of grand totals for the entire series, and aggregated result of column totals of each month, and aggregated result of column totals of each year, and aggregated result of column totals of each month and year
 
-# production mode
-$ npm run start:prod
-```
+- localhost:3000/learn-aggregate?stage=facet
+  ![$facet](src/assets/facet-a.png)
+  ![$facet](src/assets/facet-b.png)
+  ![$facet](src/assets/facet-c.png)
+  ![$facet](src/assets/facet-d.png)
 
-## Test
+## The \$bucket aggregation can provide some features that are hard to do any other way
 
-```bash
-# unit tests
-$ npm run test
+- localhost:3000/learn-aggregate?stage=bucket
+  ![$bucket](src/assets/bucket.png)
 
-# e2e tests
-$ npm run test:e2e
+- localhost:3000/learn-aggregate?stage=simple-bucket
+  ![$bucket](src/assets/simple-bucket.png)
 
-# test coverage
-$ npm run test:cov
-```
+- localhost:3000/learn-aggregate?stage=bucket-auto
+  ![$bucket](src/assets/bucket-auto.png)
 
-## Support
-
-Nest is an MIT-licensed open source project. It can grow thanks to the sponsors and support by the amazing backers. If you'd like to join them, please [read more here](https://docs.nestjs.com/support).
-
-## Stay in touch
-
-- Author - [Kamil Myśliwiec](https://kamilmysliwiec.com)
-- Website - [https://nestjs.com](https://nestjs.com/)
-- Twitter - [@nestframework](https://twitter.com/nestframework)
-
-## License
-
-Nest is [MIT licensed](LICENSE).
+- localhost:3000/learn-aggregate?stage=facet-and-bucket
+  ![$bucket](src/assets/facet-and-bucket.png)

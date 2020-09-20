@@ -356,32 +356,28 @@ export class AppService {
         result = await this.dailyRainfallModel.aggregate([...query1(), ...query2()]);
         summary = {
           NoOfRecords: result.length,
-          description: `Added fields of Month, Year, MonthYear 
-          \n and aggregated result of grand totals for the entire series`,
+          description: `Added fields of Month, Year, MonthYear and aggregated result of grand totals for the entire series`,
         };
         break;
       case '3':
         result = await this.dailyRainfallModel.aggregate([...query1(), ...query3()]);
         summary = {
           NoOfRecords: result.length,
-          description: `Added fields of Month, Year, MonthYear 
-          \n and aggregated result of column totals of each month`,
+          description: `Added fields of Month, Year, MonthYear and aggregated result of column totals of each month`,
         };
         break;
       case '4':
         result = await this.dailyRainfallModel.aggregate([...query1(), ...query4()]);
         summary = {
           NoOfRecords: result.length,
-          description: `Added fields of Month, Year, MonthYear 
-          \n and aggregated result of column totals of each year`,
+          description: `Added fields of Month, Year, MonthYear and aggregated result of column totals of each year`,
         };
         break;
       case '5':
         result = await this.dailyRainfallModel.aggregate([...query1(), ...query5()]);
         summary = {
           NoOfRecords: result.length,
-          description: `Added fields of Month, Year, MonthYear 
-          \n and aggregated result of column totals of each month and year`,
+          description: `Added fields of Month, Year, MonthYear and aggregated result of column totals of each month and year`,
         };
         break;
       case 'facet':
@@ -392,11 +388,7 @@ export class AppService {
           NoOfRecordsInMonthly: result[0].Monthly.length,
           NoOfRecordsInYearly: result[0].Yearly.length,
           NoOfRecordsInMonthYear: result[0].MonthYear.length,
-          description: `Added fields of Month, Year, MonthYear,
-          and aggregated result of grand totals for the entire series,
-          and aggregated result of column totals of each month,
-          and aggregated result of column totals of each year,
-          and aggregated result of column totals of each month and year`,
+          description: `Added fields of Month, Year, MonthYear, and aggregated result of grand totals for the entire series, and aggregated result of column totals of each month, and aggregated result of column totals of each year, and aggregated result of column totals of each month and year`,
         };
         break;
       case 'bucket':
